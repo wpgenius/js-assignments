@@ -1,4 +1,4 @@
-html,
+.html,
 body {
   position: relative;
   height: 100%;
@@ -15,24 +15,46 @@ body {
 .swiper {
   width: 100vw;
   height: 100vh;
-  background-image: url(../images/patty-brito-Y-3Dt0us7e0-unsplash.jpg);
-  background-size: cover;
 }
 
 .timeline-slider .swiper-slide {
+  color: #ffffff;
   font-size: 18px;
 }
 /* SwiperJS CSS END*/
 
+/* Slide Background Images */
+.timeline-slider .img1 {
+
+  background-image: url(../images/cdc-YlES0PvDgyc-unsplash.jpg);
+  background-size: cover;
+}
+.timeline-slider .img2 {
+  background-image: url(..//images/patty-brito-Y-3Dt0us7e0-unsplash.jpg);
+  background-size: cover;
+}
+.timeline-slider .img3 {
+  background-image: url(../images/DNA.jpg);
+  background-size: cover;
+}
+.timeline-slider .img4 {
+  background-image: url(../images/cdc-YlES0PvDgyc-unsplash.jpg);
+  background-size: cover;
+}
+/* Slide Background Images END */
+
 /* SwiperJS Pagination */
 .timeline-slider .swiper-pagination {
+  height: 80%;
   position: absolute;
   top: 20% !important;
   width: 20% !important;
-  left: 80% !important;
+  left: 85% !important;
   margin-top: 17rem !important;
   margin-left: -20rem !important;
   font-size: 5rem !important;
+  border-left: 2px solid #ffffff;
+  color: #ffffff;
 }
 
 .timeline-slider .swiper-pagination > span {
@@ -47,7 +69,7 @@ body {
   text-align: end;
   font-size: 40px;
   font-weight: lighter;
-  color: #eee;
+  /* color: #eee; */
   opacity: 1;
   background: transparent;
 }
@@ -55,17 +77,23 @@ body {
 .timeline-slider .swiper-pagination-bullet-active {
   font-size: 3rem;
   font-weight: bolder;
-  color: #fff;
+  /* color: #fff; */
 }
 /* SwiperJS Pagination END*/
+
+/* Defining page Size of Content */
+.gsap {
+  height: 100%;
+  width: 100%;
+}
 
 /* Content Section  */
 .timeline-slider .swiper-slide .line-word {
   position: absolute;
-  top: 8rem;
-  left: 9rem;
+  top: 7rem;
+  left: 7rem;
   font-size: 30px;
-  color: #ffffff;
+  /* color: #ffffff; */
 }
 
 .timeline-slider .swiper-slide .head {
@@ -73,31 +101,43 @@ body {
   height: 4re;
   width: 7rem;
   position: absolute;
-  top: 40%;
-  left: 12%;
-  color: #ffffff;
+  top: 30%;
+  left: 13%;
   font-size: 5rem;
 }
 
 .timeline-slider .swiper-slide .date-index {
-  color: #ffffff;
+  position: absolute;
   font-size: 40px;
   margin-bottom: 1.5rem;
-  top: 60%;
+  top: 56%;
   left: 13%;
 }
 
 .timeline-slider .swiper-slide .text {
   font-size: 30px;
   position: absolute;
-  top: 67%;
+  top: 62%;
   left: 13%;
-  color: #ffffff;
+}
+
+.timeline-slider .swiper-slide .line {
+  position: absolute;
+  z-index: 999;
+  border-top: 2px solid #ffffff;
+  width: 0%;
+  left: 6rem;
+}
+
+.timeline-slider .swiper-slide-active .line {
+  width: 61%;
+  transition: all ease-in-out 1s 1s;
 }
 /* Content Section END */
 
+
 /* PLUS Line */
-.hr {
+.horixontal-line {
   display: flex;
   align-items: center;
   position: absolute;
@@ -105,20 +145,11 @@ body {
   width: 95%;
   height: 20%;
   top: 2rem;
-  left: 9rem;
+  left: 6.5rem;
   font-size: 30px;
   color: #ffffff;
 }
-
-#line1 {
-  position: absolute;
-  z-index: 999;
-  border-top: 2px solid #ffffff;
-  width: 63%;
-  left: 6rem;
-}
-
-#vr {
+.vertical-line {
   position: absolute;
   z-index: 999;
   border-left: 2px solid #ffffff;
@@ -127,4 +158,4 @@ body {
   top: 3rem;
   left: 73%;
 }
-/* PLUS Line */
+/* PLUS Line END*/
