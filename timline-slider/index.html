@@ -6,6 +6,7 @@
   <title>Swiper demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -17,18 +18,19 @@
   <div class="swiper timeline-slider">
     <div class="swiper-wrapper">
       <!------------------ SLIDE 1----------------->
-      <div class="swiper-slide img1">
+      <div class="swiper-slide ">
         <!-- plus line -->
         <div class="horixontal-line">
+          <!-- Line Next to Horizontal Line [.hr] -->
+          <div class="line-word gsap">
+            <span">2021</span>
+          </div>
           <div class="line"></div>
         </div>
-
         <!-- ======================== -->
-
         <!-- initialize Animation -->
         <div class="gsap">
-          <!-- Line Next to Horizontal Line [.hr] -->
-          <span class="line-word">lorem</span>
+
           <!-- Heading Tiltle -->
           <h1 class="head">Bertch <br />Timeline</h1>
           <!-- Date index between Jeading Title & Text content -->
@@ -46,15 +48,18 @@
       <!------------------ SLIDE 1 END----------------->
 
       <!------------------ SLIDE 2----------------->
-      <div class="swiper-slide img2">
+      <div class="swiper-slide ">
+        <!-- plus line -->
         <div class="horixontal-line">
+          <!-- Line Next to Horizontal Line [.hr] -->
+          <div class="line-word gsap">
+            <span">2022</span>
+          </div>
           <div class="line"></div>
         </div>
-
+        <!-- ======================== -->
         <!-- initialize Animation -->
         <div class="gsap">
-          <!-- Line Next to Horizontal Line [.hr] -->
-          <span class="line-word">lorem</span>
           <!-- Heading Tiltle -->
           <h1 class="head">Bertch <br />Timeline</h1>
           <!-- Date index between Jeading Title & Text content -->
@@ -72,15 +77,18 @@
       <!------------------ SLIDE 2 END----------------->
 
       <!------------------ SLIDE 3----------------->
-      <div class="swiper-slide img3">
+      <div class="swiper-slide ">
+        <!-- plus line -->
         <div class="horixontal-line">
+          <!-- Line Next to Horizontal Line [.hr] -->
+          <div class="line-word gsap">
+            <span">2023</span>
+          </div>
           <div class="line"></div>
         </div>
-
+        <!-- ======================== -->
         <!-- initialize Animation -->
         <div class="gsap">
-          <!-- Line Next to Horizontal Line [.hr] -->
-          <span class="line-word">lorem</span>
           <!-- Heading Tiltle -->
           <h1 class="head">Bertch <br />Timeline</h1>
           <!-- Date index between Jeading Title & Text content -->
@@ -98,14 +106,18 @@
       <!------------------ SLIDE 3 END----------------->
 
       <!------------------ SLIDE 4----------------->
-      <div class="swiper-slide img4">
+      <div class="swiper-slide">
+        <!-- plus line -->
         <div class="horixontal-line">
+          <!-- Line Next to Horizontal Line [.hr] -->
+          <div class="line-word gsap">
+            <span">2024</span>
+          </div>
           <div class="line"></div>
         </div>
+        <!-- ======================== -->
         <!-- initialize Animation -->
         <div class="gsap">
-          <!-- Line Next to Horizontal Line [.hr] -->
-          <span class="line-word">lorem</span>
           <!-- Heading Tiltle -->
           <h1 class="head">Bertch <br />Timeline</h1>
           <!-- Date index between Jeading Title & Text content -->
@@ -128,6 +140,8 @@
     <!-- Pagination Index  END-->
   </div>
   <!-- Swiper END-->
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
   <!-- GSAP -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
