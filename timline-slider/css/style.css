@@ -11,7 +11,7 @@ body {
 body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #000000;
+  color: #ffffff;
   margin: 0;
   padding: 0;
   background-image: url(../images/raptimResearch.jpg);
@@ -30,7 +30,6 @@ body {
 }
 
 .timeline-slider .swiper-slide {
-  color: #ffffff;
   font-size: 18px;
   height: 953px;
   position: relative;
@@ -40,15 +39,11 @@ body {
 /* SwiperJS Pagination */
 .timeline-slider .swiper-pagination {
   height: 90%;
-  position: absolute;
-  top: 20% !important;
   width: 10% !important;
-  left: 87% !important;
-  margin-top: 17rem !important;
-  margin-left: -20rem !important;
+  margin-top: 0rem !important;
+  margin-right: 23.1rem !important;
   font-size: 5rem !important;
   border-left: 2px solid #ffffff;
-  color: #ffffff;
 }
 
 .timeline-slider .swiper-pagination > span {
@@ -75,19 +70,48 @@ body {
 }
 /* SwiperJS Pagination END*/
 
+/* Content Section */
+
 /* Defining page Size of Content */
-.gsap {
+.timeline-slider .swiper-slide .gsap {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-/* Content Section  */
-.timeline-slider .swiper-slide .line-word {
-  padding-top: 7rem;
-  padding-left: 1rem;
+/* PLUS Line */
+.timeline-slider .swiper-slide .horixontal-line-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
+  height: 30vh;
+  top: 2rem;
   font-size: 30px;
 }
+
+.timeline-slider .swiper-slide .line-word {
+  margin-top: -2rem;
+  margin-left: 6rem;
+  margin-right: -6rem;
+  width: 5%;
+  height: 10%;
+  font-size: 30px;
+}
+
+.timeline-slider .swiper-slide .line {
+  z-index: 999;
+  border-top: 2px solid #ffffff;
+  width: 0%;
+  margin-left: 6rem;
+}
+
+.timeline-slider .swiper-slide-active .line {
+  width: 60%;
+  transition: all ease-in-out 1s 1s;
+}
+/* PLUS Line END*/
 
 .timeline-slider .swiper-slide .head {
   z-index: 999;
@@ -113,32 +137,4 @@ body {
   top: 62%;
   left: 13%;
 }
-
-.timeline-slider .swiper-slide .line {
-  position: absolute;
-  z-index: 999;
-  border-top: 2px solid #ffffff;
-  width: 0%;
-  left: 6rem;
-}
-
-.timeline-slider .swiper-slide-active .line {
-  width: 61%;
-  transition: all ease-in-out 1s 1s;
-}
 /* Content Section END */
-
-/* PLUS Line */
-.horixontal-line {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  z-index: 999;
-  width: 100vw;
-  height: 30vh;
-  top: 4rem;
-  left: 5rem;
-  font-size: 30px;
-  color: #ffffff;
-}
-/* PLUS Line END*/
