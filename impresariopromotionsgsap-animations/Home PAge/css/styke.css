@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #000000a7;
+}
+.main .text {
+  height: 20%;
+  width: 40%;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 30%;
+  line-height: 3.5rem;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+}
+.main .text .p1 {
+  font-size: 37px;
+  color: #ffffffbc;
+  font-weight: 400;
+}
+.main .p2 span {
+  display: inline-block;
+}
+.main .text .p2 {
+  font-size: 105px;
+}
+.main .text .p3 {
+  font-size: 20px;
+  color: #ffffffbc;
+  font-weight: 400;
+  margin-left: 19rem;
+}
+.main .png {
+  /* background-color: #000000a7; */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 10%;
+  padding-left: 23%;
+  /* margin-top: 10%; */
+  /* margin-left: 20%; */
+}
