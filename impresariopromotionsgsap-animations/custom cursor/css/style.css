@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+}
+.cursor{
+    height: 40px;
+    width: 40px;
+    background-color: #908484b2;
+    border-radius: 50%;
+    position: fixed;
+}

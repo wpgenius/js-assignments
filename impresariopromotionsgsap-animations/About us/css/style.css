@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 46, 49);
+  }
+  body {
+    font-family: "Lexend", sans-serif;
+    color: #fff;
+    overflow: hidden;
+  }
+  .main {
+    width: 100%;
+    height: 100vh;
+  }
+  .aboutUs-heading {
+    display: flex;
+    gap: 18rem;
+    margin-top: 11%;
+    margin-left: 15%;
+  }
+  .t4 {
+    font-size: 250px;
+    font-weight: 500;
+  }
+  .t5 {
+    font-size: 250px;
+    font-weight: 500;
+  }
+  .img-bg {
+    background-color: #fff;
+    /* height: 55%; */
+    width: 10%;
+    position: relative;
+    top: -30%;
+    left: 50%;
+    /* rotate: deg */
+    /* transition: all ease-in-out 1s 1s; */
+  }
+  .t4 span{
+    display: inline-block;
+  }
+  .t5 span{
+    display: inline-block;
+  }
+  .image{
+    /* background-color: brown; */
+    height: 60%;
+    width: 28%;
+    position: absolute;
+    top: 14.5%;
+    left: 38%;
+  }
+  .image img{
+    /* background-color: rgb(215, 122, 122); */
+    height: 90%;
+    width: 100%;
+  }
