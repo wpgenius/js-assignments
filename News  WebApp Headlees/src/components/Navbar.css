@@ -1,0 +1,45 @@
+
+
+li {
+  list-style-type: none;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 4rem;
+}
+
+.navbar {
+  padding: 0 10px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+}
+
+.right>li {
+  padding: 5px;
+}
+
+.left {
+  display: flex;
+}
+
+.left>li {
+  padding: 5px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid grey;
+}
+
+.bottom>li {
+  padding: 5px;
+}

@@ -1,0 +1,20 @@
+/*.posts_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}*/
+
+.posts_list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: -10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .posts_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
