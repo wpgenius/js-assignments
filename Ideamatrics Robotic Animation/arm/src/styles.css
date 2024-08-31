@@ -12,75 +12,77 @@ body {
 
 
 
-.section{
+.section {
   display: flex;
   width: 100vw;
   height: 100vh;
   align-items: center;
 }
 
-.section--one--container{
-  
+.section--one--container {
+
   margin-left: 10%;
   width: 860px;
-height: 225px;
-margin-top: -100px;
-left: 215px;
-gap: 0px;
-opacity: 0px;
-
+  height: 225px;
+  margin-top: -100px;
+  left: 215px;
+  gap: 0px;
+  opacity: 0px;
+  z-index: 1;
 }
 
-.first h1{
+.first h1 {
   font-size: 4rem;
   color: white;
 }
 
-.first p{
+.first p {
   margin-top: -50px;
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
-text-align: left;
-color:  #B2D159;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  color: #B2D159;
 }
 
-.second{
+.second {
   justify-content: flex-end;
   position: relative;
 }
 
-.section--two--container{
+.section--two--container {
   width: 859px;
-height: 150px;
-top: 656px;
-left: 571px;
-gap: 0px;
-opacity: 0px;
-color: white;
+  height: 150px;
+  top: 656px;
+  left: 571px;
+  gap: 0px;
+  opacity: 0px;
+  color: white;
   margin-right: 10%;
   z-index: 1;
 }
 
-.section--third--container{
+.section--third--container {
   width: 738px;
-height: 90px;
-top: 322px;
-left: 206px;
-gap: 0px;
-opacity: 0px;
-
+  height: 90px;
+  top: 322px;
+  left: 206px;
+  gap: 0px;
+  opacity: 0px;
   margin-left: 10%;
   z-index: 1;
 }
 
-h2{
+h2 {
   font-size: 2rem;
   letter-spacing: -2px;
   line-height: 2.5rem;
   color: white;
 }
-
+span{
+  font-weight: bolder;
+  
+}
 
 
 #webgi-canvas {
@@ -90,7 +92,7 @@ h2{
   top: 0;
 }
 
-#webgi-canvas-container{
+#webgi-canvas-container {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
@@ -100,4 +102,3 @@ h2{
   flex-direction: column;
   align-items: center;
 }
-
