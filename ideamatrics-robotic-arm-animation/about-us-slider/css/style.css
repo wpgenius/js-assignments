@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(90, 82, 82);
+}
+.cw1,
+.cw2 {
+  height: 100vh;
+  width: 100%;
+}
+.cw1 {
+  background-color: blueviolet;
+}
+.cw2 {
+  background-color: rgb(57, 132, 27);
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: chartreuse;
+}
+
+.container-wrap {
+  width: 300vw;
+  height: 100%;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+}
+
+.container {
+  width: 8%;
+  height: 45vh;
+  margin-left: 5%;
+  background-color: blueviolet;
+}
+#c2 {
+  margin-top: -5%;
+}
