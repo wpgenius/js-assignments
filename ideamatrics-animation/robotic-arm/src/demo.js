@@ -75,7 +75,7 @@ async function setupViewer(){
 
   viewer.renderer.refreshPipeline();
 
-  await manager.addFromPath("./assets/a8.glb");
+  await manager.addFromPath( robotic_arm.path );
 
   viewer.getPlugin(TonemapPlugin).config.clipBackground = true;
 
