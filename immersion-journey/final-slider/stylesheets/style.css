@@ -1,92 +1,91 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
-  html,
-  body {
-    width: 100%;
-    height: 100vh;
-    background-color: #403b3b;
-    color: #fff;
-  }
-  .main {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-  }
-  .left-section {
-    width: 30%;
-    height: 25%;
-    background: #5d5a5a;
-    display: grid;
-    padding-top: 1%;
-    padding-left: 8%;
-    margin-top: 15%;
-    font-size: 1.8rem;
-    position: fixed;
-  }
-  .left-section a {
-    color: #fff;
-    text-decoration: none;
-  }
-  .posts {
-    height: 200vh;
-    width: 70vw;
-    margin-top: 14%;
-    margin-left: 30%;
-  }
-  .container {
-    width: 100%;
-    height: 20%;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-  }
-  .image {
-    height: 100%;
-    width: 30%;
-    background-color: #b33030;
-  }
-  .image img {
-    width: 100%;
-    height: 100%;
-  }
-  .content {
-    background-color: cadetblue;
-    width: 50%;
-    height: 100%;
-    padding: 5%;
-  }
-  .nav-line {
-    width: 10%;
-    height: 45%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15%;
-    margin-left: 86%;
-  }
-  .number-label {
-    height: 100%;
-    width: 100%;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-  }
-  .nav-line a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  .icon {
-    height: 40px;
-    width: 40px;
-  }
-  .icon img {
-    height: 100%;
-    width: 100%;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #403b3b;
+  color: #fff;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.left-section {
+  width: 30%;
+  height: 25%;
+  background: #5d5a5a;
+  display: grid;
+  padding-top: 1%;
+  padding-left: 8%;
+  margin-top: 15%;
+  font-size: 1.8rem;
+  position: fixed;
+}
+.left-section a {
+  color: #fff;
+  text-decoration: none;
+}
+.posts {
+  height: 200vh;
+  width: 70vw;
+  margin-top: 14%;
+  margin-left: 30%;
+}
+.container {
+  width: 100%;
+  height: 20%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+.image {
+  height: 100%;
+  width: 30%;
+  background-color: #b33030;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  background-color: cadetblue;
+  width: 50%;
+  height: 100%;
+  padding: 5%;
+}
+.nav-line {
+  width: 10%;
+  height: 45%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15%;
+  margin-left: 86%;
+}
+.number-label {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.nav-line a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.icon {
+  height: 40px;
+  width: 40px;
+}
+.icon img {
+  height: 100%;
+  width: 100%;
+}
