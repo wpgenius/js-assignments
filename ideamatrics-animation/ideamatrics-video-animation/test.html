@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smooth Scrolling Test</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Locomotive Scroll CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+  
+  <style>
+    html, body {
+      height: 100%;
+      overflow: hidden;
+    }
+
+    [data-scroll-container] {
+      height: 100%;
+    }
+
+    
+
+    
+
+    
+  </style>
+</head>
+
+<body>
+  <!-- Locomotive Scroll container -->
+  <div data-scroll-container>
+    <div class="parent" data-scroll-section>
+      <div class="canv">
+        <canvas id="frame"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- GSAP and ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <!-- Locomotive Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+  <script>
+    // Canvas setup
+    const canvas = document.querySelector("canvas");
+    const context = canvas.getContext("2d");
+
+    // Dummy canvas animation (change this part to your actual animation code)
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    context.fillStyle = 'red';
+    context.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Initialize Locomotive Scroll
+    const locoScroll = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]"),
+      smooth: true,
+    });
+
+    // Locomotive Scroll and GSAP ScrollTrigger integration
+    locoScroll.on("scroll", ScrollTrigger.update);
+
+    ScrollTrigger.scrollerProxy("[data-scroll-container]", {
+      scrollTop(value) {
+        return arguments.length ? locoScroll.scrollTo(value, 0, 0) : locoScroll.scroll.instance.scroll.y;
+      },
+      getBoundingClientRect() {
+        return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+      },
+      pinType: document.querySelector("[data-scroll-container]").style.transform ? "transform" : "fixed"
+    });
+
+    // GSAP ScrollTrigger example animation (change this part to your canvas animation logic)
+    gsap.to(".parent", {
+      scrollTrigger: {
+        trigger: ".parent",
+        scroller: "[data-scroll-container]",
+        start: "top top",
+        scrub: true,
+        end: "bottom bottom",
+      },
+      backgroundColor: "#000", // Just for testing; can be replaced by your animation code
+    });
+
+    // Refresh ScrollTrigger and Locomotive Scroll
+    ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
+    ScrollTrigger.refresh();
+  </script>
+</body>
+
+</html>

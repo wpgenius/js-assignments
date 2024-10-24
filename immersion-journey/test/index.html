@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  height: 200px;
+  background: #bbb;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.container {
+  width: 80%;
+  margin: 50px auto;
+  clear: both;
+}
+
+.container::before, .container::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.right {
+  width: 750px;
+  display: inline-block;
+  vertical-align: top;
+  float: right;
+}
+
+.right div {
+  background-color: #bbb;
+  height: 250px;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sticky Div/Sidebar on Scroll</h1>
+    </header>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+      
+      
+
+    <script>
+    //    let sidebar = document.getElementsByClassName("sticky-menu")[0];
+    //    window.onscroll = ()=>{
+    //        let srt = window.screenY
+    //        let vh = window.innerHeight
+    //        let conth = sidebar.getBoundingClientRect().height;
+    //        if(srt >= conth - vh){
+    //            sidebar.style.position = "fixed";
+    //        }
+    //        else{
+    //            sidebar.style.position=""
+    //        }
+    //    }
+    </script>    
+</body>
+</html>

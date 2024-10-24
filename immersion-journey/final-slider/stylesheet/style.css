@@ -1,0 +1,69 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.swiper {
+  width: 60%;
+  height: 100%;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-wrapper {
+  display: grid;
+  height: 200vh;
+  position: absolute;
+}
+
+.pin {
+  height: 6rem;
+  width: 6rem;
+}
+/* SwiperJS Pagination */
+.swiper-pagination {
+  position: fixed;
+  height: -20%;
+  width: 20% !important;
+  font-size: 5rem !important;
+  padding-left: 10%;
+  margin-left: 10rem;
+}
+
+.swiper-pagination > span {
+    padding-top: 2.5rem;
+  padding-left: 10rem;
+}
+
+.swiper-pagination-bullet {
+  padding-top: 2rem;
+  text-align: end;
+  font-size: 30px;
+  font-weight: lighter;
+  opacity: 1;
+  background: transparent;
+}
+
+.swiper-pagination-bullet-active {
+  font-size: 3rem;
+  font-weight: bolder;
+}
