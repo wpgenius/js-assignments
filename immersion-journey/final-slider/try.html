@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: #403b3b;
+        color: #fff;
+      }
+      .main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+      }
+      .left-section {
+        width: 30%;
+        height: 25%;
+        background: #5d5a5a;
+        display: grid;
+        padding-top: 1%;
+        padding-left: 8%;
+        margin-top: 15%;
+        font-size: 1.8rem;
+        position: fixed;
+      }
+      .left-section a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .posts {
+        height: 200vh;
+        width: 70vw;
+        margin-top: 14%;
+        margin-left: 30%;
+      }
+      .container {
+        width: 100%;
+        height: 20%;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+      }
+      .image {
+        height: 100%;
+        width: 30%;
+        background-color: #b33030;
+      }
+      .image img {
+        width: 100%;
+        height: 100%;
+      }
+      .content {
+        background-color: cadetblue;
+        width: 50%;
+        height: 100%;
+        padding: 5%;
+      }
+      .nav-line {
+        width: 10%;
+        height: 45%;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;
+        margin-left: 86%;
+      }
+      .number-label {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+      .nav-line a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+      .icon {
+        height: 40px;
+        width: 40px;
+      }
+      .icon img {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="left-section">
+        <a href="#">South Africa</a>
+        <a href="#">Europe</a>
+        <a href="#">India</a>
+      </div>
+
+      <div class="posts">
+        <div class="container">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1727707185480-a50e6090b58c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h1>Discover East Africa 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates alias officiis voluptatem dolore autem, rem, ab ipsum,
+              tempora voluptate cupiditate odio perspiciatis accusamus cum
+              inventore quos atque minus nulla! Eius.
+            </p>
+            <button>lorem</button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1719937206098-236a481a2b6d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h1>Discover East Africa 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates alias officiis voluptatem dolore autem, rem, ab ipsum,
+              tempora voluptate cupiditate odio perspiciatis accusamus cum
+              inventore quos atque minus nulla! Eius.
+            </p>
+            <button>lorem</button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1727707185480-a50e6090b58c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h1>Discover East Africa 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates alias officiis voluptatem dolore autem, rem, ab ipsum,
+              tempora voluptate cupiditate odio perspiciatis accusamus cum
+              inventore quos atque minus nulla! Eius.
+            </p>
+            <button>lorem</button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1727775805114-a87c6bcaf9db?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h1>Discover East Africa 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates alias officiis voluptatem dolore autem, rem, ab ipsum,
+              tempora voluptate cupiditate odio perspiciatis accusamus cum
+              inventore quos atque minus nulla! Eius.
+            </p>
+            <button>lorem</button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="image">
+            <img
+              src="https://images.unsplash.com/photo-1727707185480-a50e6090b58c?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div class="content">
+            <h1>Discover East Africa 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates alias officiis voluptatem dolore autem, rem, ab ipsum,
+              tempora voluptate cupiditate odio perspiciatis accusamus cum
+              inventore quos atque minus nulla! Eius.
+            </p>
+            <button>lorem</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-line">
+        <div class="number-label">
+          <a class="point" href="#">01</a>
+          <a class="point" href="#">02</a>
+          <a class="point" href="#">03</a>
+          <a class="point" href="#">04</a>
+          <a class="point" href="#">05</a>
+          <div class="icon">
+            <!-- <img
+              src="assets/pngtree-red-pin-location-for-maps-png-image_3118845.jpg"
+              alt=""
+            /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      var panelsbg = document.getElementsByClassName("post");
+      var panels = document.getElementsByClassName("point");
+
+      for (var i = 0; i < panels.length; i++) {
+        panels[i].addEventListener("mouseover", function () {
+          console.log("working");
+          //this.style.fontSize ="2rem"
+          gsap.to(this, {
+            fontSize: "2rem",
+          });
+        });
+        panels[i].addEventListener("mouseout", function () {
+          console.log("working");
+          //this.style.fontSize ="2rem"
+          gsap.to(this, {
+            fontSize: "1rem",
+          });
+        });
+
+        gsap.fromTo(
+          panels[i],
+          {
+            // fontSize: "1.5",
+          },
+          {
+            fontSize: "2rem",
+            scrollTrigger: {
+              trigger: panels[i],
+              start: "top 1vh",
+              end: "bottom center",
+              toggleActions: "play none none reverse",
+            },
+          }
+        );
+      }
+
+      gsap.to('.icon', {
+        y: index * window.innerHeight, // Adjust the calculation based on your layout
+        scrollTrigger: {
+            trigger: section,
+            start: 'top center',
+            end: 'bottom center',
+            scrub: true, // Smooth animation on scroll
+        }});
+
+    </script>
+  </body>
+</html>

@@ -16,29 +16,31 @@ body {
   height: 100%;
 }
 .swiper-slide {
+  /* width: 100%;
+  height: 30%; */
+  width: 960px;
+  height: 40px;
+  top: 1226;
+  left: 366px;
   text-align: center;
   font-size: 18px;
   background: #fff;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
 }
-.swiper-slide img {
+/* .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 .swiper-wrapper {
   display: grid;
   height: 200vh;
   position: absolute;
 }
 
-.pin {
-  height: 6rem;
-  width: 6rem;
-}
 /* SwiperJS Pagination */
 .swiper-pagination {
   position: fixed;
@@ -47,10 +49,20 @@ body {
   font-size: 5rem !important;
   padding-left: 10%;
   margin-left: 10rem;
+  /* background-color: chocolate; */
+}
+.pin-icon {
+  width: 64px; /* Adjust size as needed */
+  height: 54px; /* Adjust size as needed */
+  transition: top 0.3s, left 0.3s; /* Smooth transition */
+  z-index: 1000; /* Ensure it stays on top */
+  position: absolute;
+  margin-top: -9%;
+  margin-left: 4.8vh;
 }
 
 .swiper-pagination > span {
-    padding-top: 2.5rem;
+  padding-top: 2.5rem;
   padding-left: 10rem;
 }
 
@@ -66,4 +78,177 @@ body {
 .swiper-pagination-bullet-active {
   font-size: 3rem;
   font-weight: bolder;
+}
+
+.swiper-slide .main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.image {
+  width: 489px;
+height: 460px;
+top: 1226px;
+left: 366px;
+
+  /* height: 100%;
+  width: 40%;
+  background-color: chocolate; */
+}
+.image img {
+  height: 100%;
+  width: 100%;
+}
+.content {
+  /* height: 100%;
+  width: 60%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: rgb(206, 142, 96); */
+  width: 381px;
+height: 390.9px;
+margin-left: 2rem;
+
+}
+.content .content-heading {
+  width: 370px;
+  height: 80px;
+  top: 1266px;
+  left: 905px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Butler;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.content .content-p {
+  width: 365px;
+  height: 69.08px;
+  top: 1361px;
+  left: 905px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Onest;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.95px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.left-section {
+  width: 12%;
+  height: 24%;
+  display: grid;
+  padding-top: 0%;
+  padding-left: 25%;
+  margin-top: 20%;
+  font-size: 1.8rem;
+  position: fixed;
+}
+.left-section a {
+  width: 140px;
+  /* height: 23px; */
+  opacity: 0px;
+  font-family: Butler;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  color: #000000;
+  text-decoration: none;
+}
+.line {
+  width: 172px;
+  height: 0px;
+  top: 1366px;
+  left: 159px;
+  gap: 0px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  border: 1px solid #b3b3b3;
+
+}
+
+.bullet-content {
+  width: 381px;
+  height: 200.9px;
+  top: 1456px;
+  left: 905px;
+  gap: 0px;
+  opacity: 0px;
+}
+.bullet-content h1 {
+  width: 147px;
+  height: 23.03px;
+  top: 1456px;
+  left: 905px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Butler;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.flex-content-wrapper {
+  height: 20%;
+  width: 100%;
+}
+
+.flex-content {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon {
+  width: 20px;
+  height: 20.03px;
+  /* top: 1496.05px; */
+  left: 906px;
+  gap: 0px;
+  opacity: 0px;
+}
+.ft-content h3{
+  width: 346px;
+  height: 23.03px;
+  /* top: 1494.05px; */
+  left: 940px;
+  opacity: 0px;
+  font-family: Onest;
+  font-size: 18px;
+  font-weight: 400;
+  /* line-height: 22.95px; */
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.btn{
+  width: 137px;
+height: 35.71px;
+margin-left: -15rem;
+gap: 0px;
+opacity: 0px;
+background: linear-gradient(180deg, #FAC710 0%, #EFBC04 100%);
+font-family: Onest;
+font-size: 18px;
+font-weight: 400;
+line-height: 22.95px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
 }
